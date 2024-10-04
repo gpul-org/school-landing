@@ -24,6 +24,8 @@
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
 
+    <link rel="icon" href="img/Logo_GPUL.png">
+
 </head>
 
 <body id="page-top">
@@ -315,8 +317,59 @@
     <section id="contact">
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Contáctanos</h2>
+        <!--<p class="mb-5" style="text-align: center">Se tes algunha dúbida ou suxerencia non dudes en contactar con nosco enviando un correo a <b>info@gpul.org</b></p>-->
         <hr class="star-dark mb-5">
-        <p class="mb-5" style="text-align: center">Se tes algunha dúbida ou suxerencia non dudes en contactar con nosco enviando un correo a <b>info@gpul.org</b></p>
+        <p class="mb-5 mt-3" style="text-align: center">Se queres propoñer a seguinte charla, cubre este formulario:</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-x1-7">
+            <form id="contactForm">
+              <!-- Primera fila -->
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Nome</label>
+                  <input id="name" class="form-control" type="text" placeholder="Nome">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="email">Email</label>
+                  <input id="email" class="form-control" type="email" placeholder="Correo electrónico">
+                </div>
+              </div>
+              <!-- Segunda fila -->
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="telegram">Alias en Telegram</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">@</div>
+                    </div>
+                  <input id="telegram" class="form-control" type="text" placeholder="gpul_">
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="presenta">Darías ti a charla?</label>
+                  <select id="presenta" class="form-control">
+                    <option selected>Escolle...</option>
+                    <option>Sí</option>
+                    <option>Non</option>
+                    <option>Se non hai volutarios...</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Tercera fila -->
+              <div class="form-group">
+                <label for="asunto">Título</label>
+                <input id="asunto" class="form-control" type="text" placeholder="Resumo da charla nunha liña"</input>
+              </div>
+              <!-- Cuarta fila -->
+              <div class="form-group">
+                <label for="texto">Proposta</label>
+                <textarea class="form-control" id="texto" rows="3" placeholder="Explica de que vai a charla"></textarea>
+              </div>
+              <!-- Envio -->
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
