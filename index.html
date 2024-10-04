@@ -24,7 +24,7 @@
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
 
-    <link rel="icon" href="img/Logo_GPUL.png">
+    <link rel="icon" href="favicon.png">
 
 </head>
 
@@ -327,11 +327,11 @@
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Nome</label>
-                  <input id="name" class="form-control" type="text" placeholder="Nome">
+                  <input id="name" class="form-control" type="text" placeholder="Nome" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="email">Email</label>
-                  <input id="email" class="form-control" type="email" placeholder="Correo electrónico">
+                  <input id="email" class="form-control" type="email" placeholder="Correo electrónico" required>
                 </div>
               </div>
               <!-- Segunda fila -->
@@ -347,27 +347,40 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="presenta">Darías ti a charla?</label>
-                  <select id="presenta" class="form-control">
-                    <option selected>Escolle...</option>
-                    <option>Sí</option>
-                    <option>Non</option>
-                    <option>Se non hai volutarios...</option>
+                  <select id="presenta" class="form-control" required>
+                    <option value="" disabled selected hidden>Escolle...</option>
+                    <option value="Sí">Sí</option>
+                    <option value="Non">Non</option>
+                    <option value="Se non hai voluntarios...">Se non hai volutarios...</option>
                   </select>
                 </div>
               </div>
               <!-- Tercera fila -->
               <div class="form-group">
                 <label for="asunto">Título</label>
-                <input id="asunto" class="form-control" type="text" placeholder="Resumo da charla nunha liña"</input>
+                <input id="asunto" class="form-control" type="text" placeholder="Resumo da charla nunha liña" required>
               </div>
               <!-- Cuarta fila -->
               <div class="form-group">
                 <label for="texto">Proposta</label>
-                <textarea class="form-control" id="texto" rows="3" placeholder="Explica de que vai a charla"></textarea>
+                <textarea class="form-control" id="texto" rows="3" placeholder="Explica de que vai a charla" required></textarea>
               </div>
               <!-- Envio -->
               <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
+            <!-- Mensajes del formulario -->
+            <div id="formulario-correcto" class="mt-3">
+              <div class="alert alert-success">
+                <b class="alert-heading">O formulario enviouse correctamente</b>
+                <p class="mb-0">Contactaremos contigo por Telegram para falar sobre posibles datas e como será a charla</p>
+              </div>
+            </div>
+            <div id="formulario-incorrecto">
+              <div class="alert alert-danger">
+                <b class="alert-heading">Erro ao enviar o formulario</b>
+                <p class="mb-0">Se o problema persiste, podes contactar con nós a través do correo <a href="mailto:<charlas>@gpul.org" class="alert-link">charlas@gpul.org</a></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -378,10 +391,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">GPUL</h4>
-            <p class="lead mb-0">Facultade de Informática, Elviña
-              <br>A Coruña, 15071</p>
-          </div>
+            <h4 class="text-uppercase mb-4">GPUL</h4> <p class="lead mb-0">Facultade de Informática, Elviña <br>A Coruña, 15071</p> </div>
           <div class="col-md-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">As Nosas Redes</h4>
             <ul class="list-inline mb-0">
