@@ -326,11 +326,11 @@
               <!-- Primera fila -->
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="name">Nome</label>
+                  <label for="name">Nome <b class="text-danger">*</b></label>
                   <input id="name" class="form-control" type="text" placeholder="Nome" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="email">Email</label>
+                  <label for="email">Email <b class="text-danger">*</b></label>
                   <input id="email" class="form-control" type="email" placeholder="Correo electrónico" required>
                 </div>
               </div>
@@ -346,7 +346,7 @@
                   </div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="presenta">Darías ti a charla?</label>
+                  <label for="presenta">Darías ti a charla? <b class="text-danger">*</b></label>
                   <select id="presenta" class="form-control" required>
                     <option value="" disabled selected hidden>Escolle...</option>
                     <option value="Sí">Sí</option>
@@ -357,14 +357,15 @@
               </div>
               <!-- Tercera fila -->
               <div class="form-group">
-                <label for="asunto">Título</label>
+                <label for="asunto">Título <b class="text-danger">*</b></label>
                 <input id="asunto" class="form-control" type="text" placeholder="Resumo da charla nunha liña" required>
               </div>
               <!-- Cuarta fila -->
               <div class="form-group">
-                <label for="texto">Proposta</label>
+                <label for="texto">Proposta <b class="text-danger">*</b></label>
                 <textarea class="form-control" id="texto" rows="3" placeholder="Explica de que vai a charla" required></textarea>
               </div>
+              <p><b class="text-danger">*</b>Campo obrigatorio</p>
               <!-- Envio -->
               <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
