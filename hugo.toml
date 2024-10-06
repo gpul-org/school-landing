@@ -1,3 +1,8 @@
 baseURL = 'https://delthia.github.io/school-landing'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+[pagination]
+  disableAliases = false
+  pagersize = 10
+  path = 'pagina'

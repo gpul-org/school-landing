@@ -26,7 +26,7 @@
     <h1 class="text-center mt-4">Últimas charlas</h1>
     <div class="container d-flex flex-wrap justify-content-around pt-2 mb-4">
       {{ range site.RegularPages.Limit 4 }}
-        <div class="card" style="width: 18rem;">
+        <div class="card mb-3" style="width: 18rem;">
           {{ if .Params.cartel }}
             <img src="{{ .RelPermalink }}/{{ .Params.cartel }}" class="rounded-top">
           {{ else }}
@@ -34,7 +34,7 @@
           {{ end }}
           <div class="card-body">
             <h5 class="card-title">{{ .LinkTitle }}</h5>
-            <p class="card-text">{{ .Description }}</p>
+            <p class="card-text">{{ .Summary | strings.Truncate 150 }}</p>
             <a href="{{ .RelPermalink }}" class="btn btn-primary">Más información</a>
           </div>
         </div>
@@ -49,10 +49,9 @@
     <div class="container-md">
       <h1 class="text-center text-dark pt-5 mb-5">Patrocinadores</h1>
       <div class="container d-flex flex-wrap justify-content-around pb-5">
-        <img height="35px" src="patrocinadores/udc.svg">
+        <img height="40px" src="patrocinadores/udc.svg">
         <img height="40px" src="https://www.fic.udc.es/sites/default/files/logo_fic_0.png">
         <img height="40px" src="patrocinadores/amtega.svg">
-        <img height="40px" src="https://www.xunta.gal/ficheiros/identidade-corporativa/2021/marca-principal/marca-positivo.png">
       </div>
     </div>
   </div>
