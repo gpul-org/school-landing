@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="container-md mt-3">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title }} <a href="/index.xml"><span class="bi-rss-fill" style="color: #ff8800"></span></a></h1>
     {{ .Content }}
 
     {{ $pages := .Pages }}

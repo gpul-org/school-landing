@@ -1,5 +1,11 @@
 +++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
-draft = true
+draft = false
+poster = 'cartel.png'
+summary = ''
+location = 'Aula x.x - Facultade de informática'
+time = '18:30 a 20:30'
+author = ''
+author_link = ''
 +++

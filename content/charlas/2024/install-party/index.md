@@ -3,7 +3,8 @@ title = 'Linux Install Party'
 date = 2024-09-17T17:30:00+02:00
 draft = false
 poster = 'cartel.png'
-location = 'Aula 3.5'
+location = 'Aula 3.5 - Facultade de Informática'
+time = '11:30 a 13:30 y 17:30 a 19:30'
 +++
 
 El próximo martes 17 organizamos una **Install Party** para todos los públicos. Durante el evento, podrás aprender a instalar y configurar GNU/Linux en tu propio equipo, contando con la ayuda de compañeros con experiencia en software libre.
