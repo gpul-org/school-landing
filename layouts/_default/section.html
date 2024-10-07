@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <div class="container-md mt-3">
+    <h1>{{ .Title }} <a href="/index.xml"><span class="bi-rss-fill" style="color: #ff8800"></span></a></h1>
+    {{ .Content }}
+
+    {{ $pages := .Pages }}
+    {{ $paginator := .Paginate $pages.ByPublishDate.Reverse 5 }}
+
+    {{ range $paginator.Pages }}
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+          <img src="{{ .RelPermalink }}/{{ .Params.poster }}" class="img-fluid rounded-start">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">{{ .Title }}</h2>
+              <p class="card-text"><small class="text-body-secondary">{{ .Date.Format "02/01/2006" }}{{ if .Params.location }} - {{ .Params.location }}{{ end }}</small></p>
+              <p class="card-text">{{ index (split .Summary "</p>") 0 | plainify }}</p>
+              <a class="btn btn-primary" href="{{ .RelPermalink }}">Más información</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+
+    <div class="d-flex justify-content-center pt-3">{{ template "_internal/pagination.html" . }}</div>
+  </div>
+{{ end }}

@@ -1,0 +1,8 @@
+baseURL = 'https://school.gpul.org'
+languageCode = 'es-es'
+title = 'GPUL School'
+
+[pagination]
+  disableAliases = false
+  pagersize = 10
+  path = 'pagina'
