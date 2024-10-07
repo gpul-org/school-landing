@@ -142,6 +142,7 @@
           if(response.status == 200) {
             form.style.setProperty('display', 'none');
             document.getElementById('formulario-correcto').style.removeProperty('display');
+            document.getElementById('formulario-incorrecto').style.setProperty('display', 'hidden');
           }
           else {
             document.getElementById('formulario-incorrecto').style.removeProperty('display');
