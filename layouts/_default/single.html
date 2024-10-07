@@ -13,6 +13,8 @@
         {{ if .Params.time }}<p><span class="bi-clock"></span> {{ .Params.time }}</p>{{ end }}
         {{ if .Params.location }}<p><span class="bi-geo"></span> {{ .Params.location }}</p>{{ end }}
         {{ if .Params.author_link }}<p><span class="bi-person"></span> <a href="{{ .Params.author_link }}" target="_blank" class="link-light">{{ .Params.author }}</a></p>{{ else if .Params.author }}<p><span class="bi-person"></span> {{ .Params.author }}</p>{{ end }}
+
+        {{ if .Params.meetup }}<a class="btn btn-danger" href="{{ .Params.meetup }}" target="_blank">Apúntate en meetup</a>{{ end }}
       </div>
     </div>
 
