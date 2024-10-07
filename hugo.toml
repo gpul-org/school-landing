@@ -1,6 +1,6 @@
-baseURL = 'https://delthia.github.io/school-landing'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://school.gpul.org'
+languageCode = 'es-es'
+title = 'GPUL School'
 
 [pagination]
   disableAliases = false
