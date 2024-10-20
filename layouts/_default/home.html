@@ -36,6 +36,7 @@
           {{ end }}
           <div class="card-body">
             <h5 class="card-title">{{ .LinkTitle }}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">{{ .Date.Format "02/01/2006" }}</h6>
             <p class="card-text">{{ .Summary | strings.Truncate 150 }}</p>
             <a href="{{ .RelPermalink }}" class="btn btn-primary">Más información</a>
           </div>
