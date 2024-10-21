@@ -7,8 +7,8 @@ summary = ''
 location = 'Aula 3.5 - Facultade de Informática'
 time = '18:30 a 20:30'
 meetup = 'https://www.meetup.com/gpul-labs/events/303879556'
-author = ''
-author_link = ''
+author = '@emilioj'
+author_link = 'https://github.com/emilioj'
 +++
 
 Traballes só ou en equipo; desenvolvendo código, escribindo
