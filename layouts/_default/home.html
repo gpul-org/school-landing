@@ -7,6 +7,10 @@
       width: 100%;
       background-position: center center;
     }
+    .logo-colab {
+      display: block;
+      margin: 0 auto;
+    }
   </style>
   <div class="container-fluid img-container" style="margin=0px">
     <div class="p5 text-center body-tertiary pb-3">
@@ -32,6 +36,7 @@
           {{ end }}
           <div class="card-body">
             <h5 class="card-title">{{ .LinkTitle }}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">{{ .Date.Format "02/01/2006" }}</h6>
             <p class="card-text">{{ .Summary | strings.Truncate 150 }}</p>
             <a href="{{ .RelPermalink }}" class="btn btn-primary">Más información</a>
           </div>
@@ -46,10 +51,11 @@
   <div class="container-fluid bg-light">
     <div class="container-md">
       <h1 class="text-center text-dark pt-5 mb-5">Colaboradores</h1>
-      <div class="container d-flex flex-wrap justify-content-around pb-5">
-        <img height="40px" src="patrocinadores/udc.svg">
-        <img height="40px" src="https://www.fic.udc.es/sites/default/files/logo_fic_0.png">
-        <img height="40px" src="patrocinadores/amtega.svg">
+      <!--<div class="container d-flex flex-wrap justify-content-around pb-5">-->
+      <div class="d-flex flex-column flex-sm-row justify-content-around pb-5">
+        <span class="logo-colab pb-4"><img height="40px" src="patrocinadores/udc.svg"></span>
+        <span class="logo-colab pb-4"><img height="40px" src="https://www.fic.udc.es/sites/default/files/logo_fic_0.png"></span>
+        <span class="logo-colab pb-4"><img height="40px" src="patrocinadores/amtega.svg"></span>
       </div>
     </div>
   </div>
@@ -80,7 +86,7 @@
         </div>
         <div class="form-group col-md-6">
           <label for="presenta" class="mb-2">Darías ti a charla?<b class="text-danger">*</b></label>
-          <select id="presenta" class="form-select mb-2">
+          <select id="presenta" class="form-select mb-2" name="presenta">
             <option disabled selected hidden>Escolle...</option>
             <option value="Sí">Sí</option>
             <option value="Non">Non, solo é unha suxerencia</option>
@@ -122,7 +128,7 @@
     <script>
       const form = document.getElementById('suggestionForm');
       const submit = document.getElementById('submit');
-      
+
       form.addEventListener('submit', function(e) {
         const url = "https://activepieces.gpul.org/api/v1/webhooks/MST73WP2v5phWqVKDNUUP/sync";
         e.preventDefault();
