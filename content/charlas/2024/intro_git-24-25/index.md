@@ -20,3 +20,7 @@ Git é un versátil e potente sistema de control de versións que
 se axeita a case calquera fluxo de traballo e necesidade.
 
 Neste obradoiro aprenderás o seu uso máis básico.
+
+## Grabación da charla
+
+{{< youtube Bka4nO0CXZI >}}
