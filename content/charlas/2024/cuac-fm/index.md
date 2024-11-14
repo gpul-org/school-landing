@@ -9,6 +9,7 @@ time = '18:00 a 19:00'
 author = ''
 author_link = ''
 meetup = 'https://www.meetup.com/gpul-labs/events/304003602/?eventOrigin=group_upcoming_events'
+youtube_id = 'ME-no3CCZR8'
 +++
 
 En esta charla hablaremos de la transformación digital de CUAC FM. De como unos estudiantes de diferentes facultades de la UDC abrieron una radio analógica en 1996 a cómo en 2024 CUAC FM tiene digitalizados todo el proceso de emisión y redifusión de podcasts.
@@ -17,3 +18,6 @@ Hablaremos de como CUAC FM se convirtió en la primera radio con apps de Android
 
 Todo esto gracias al open source y la colaboración de estudiantes de la FIC durante más de 25 años de vida.
 
+## Grabación da charla
+
+{{< youtube ME-no3CCZR8 >}}
