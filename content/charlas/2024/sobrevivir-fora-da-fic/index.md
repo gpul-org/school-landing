@@ -20,6 +20,9 @@ Tamén presentaremos o Premio ao TFG/TFM libre e daremos algúns consellos para 
 
 Veremos de qué vai iso do software libre, de cómo a idea de compartir coñecemento está a cambiar o mundo e do importante que é para o teu futuro profesional xa que ao final, para as empresas que importan, participar no software libre é o teu novo currículum.
 
+## Diapositivas da charla
+https://atlantica-conf.gitlab.io/guia-para-sobrevivir-fora-da-fic/#/portada
+
 ## Grabación da charla
 
 {{< youtube R45XPvYLJKg >}}
