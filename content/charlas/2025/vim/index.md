@@ -8,8 +8,8 @@ location = 'Aula 2.9 - Facultade de Informática'
 time = '18:30 a 20:30'
 author = '@migueldeoleiros'
 author_link = 'https://github.com/migueldeoleiros'
-meetup = ''
-youtube_id = 'R45XPvYLJKg'
+meetup = 'https://www.meetup.com/es-ES/gpul-labs/events/306593273/'
+youtube_id = ''
 +++
 
 Aprenderemos trucos y atajos indispensables para usar Vim.
