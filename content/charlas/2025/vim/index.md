@@ -9,7 +9,6 @@ time = '18:30 a 20:30'
 author = '@migueldeoleiros'
 author_link = 'https://github.com/migueldeoleiros'
 meetup = 'https://www.meetup.com/es-ES/gpul-labs/events/306593273/'
-youtube_id = ''
 +++
 
 Aprenderemos trucos y atajos indispensables para usar Vim.
@@ -17,3 +16,7 @@ Aprenderemos trucos y atajos indispensables para usar Vim.
 Desde los conceptos básicos hasta los trucos avanzados que te harán sentir como un verdadero maestro de la productividad. Tocaremos un poco de todo, tanto si estás interesado en aprender Vim de cero como si llevas un tiempo con él y quieres entender mejor los conceptos (y algún truquillo).
 
 **¡No te lo puedes perder!**
+
+## Grabación de la charla
+
+{{< youtube 0-_O-cOw63A >}}
